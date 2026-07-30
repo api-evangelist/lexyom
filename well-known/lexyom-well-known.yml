@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of https://lexyomlaw.com/.well-known/*
+host: https://lexyomlaw.com
+note: 'No .well-known documents are published. Every probe returned 404. Recorded so
+  re-runs can detect a change; no WellKnown pointer is wired in apis.yml because there
+  is no discovery surface to point at.'
+documents: []
+probes:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+other:
+- path: /robots.txt
+  status: 200
+  note: 'Explicitly allows GPTBot, Google-Extended, ClaudeBot and PerplexityBot;
+    disallows /admin/, /portal/ and /api/.'
+- path: /sitemap.xml
+  status: 200
