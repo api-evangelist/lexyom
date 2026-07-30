@@ -1,19 +1,55 @@
 aid: lexyom
 name: Lexyom
-description: Lexyom is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Lexyom (Lexyom LLP) is a law firm operating at lexyom.com, which redirects
+  to lexyomlaw.com. The firm markets legal services to financial-services companies:
+  financial institution setup, company registration, broker licensing, proprietary-trading
+  ("prop firm") licensing, trademark registration and IP protection, retainer representation,
+  and contract drafting and review. Published offices are New York (450 Park Avenue)
+  and Dubai (DIFC Gate Village), with stated emphasis on US and MENA cross-border
+  regulation. The public web property is a client-rendered single-page application
+  with a marketing site, a blog, a news section, a "Become a Client" intake flow, and
+  an authenticated client portal (matters, contracts, documents, invoices, trademarks).
+  Lexyom publishes no public API, developer portal, API documentation, SDKs, or
+  machine-readable specifications as of this enrichment pass.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://lexyomlaw.com/assets/lexyom-logo-copper-Dk_OSynZ.png
 url: https://raw.githubusercontent.com/api-evangelist/lexyom/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
+x-note: 'Identity discrepancy recorded, not resolved: this repo was created from a
+  500 Global portfolio list, but the site now at lexyom.com/lexyomlaw.com presents
+  as Lexyom LLP, a law firm claiming operation since 1974. No source was available
+  in this pass to confirm whether these are the same entity, a rebrand, or a domain
+  reuse. Only what was directly verified on the live site is recorded below.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Legal
+- Legal Services
+- Law Firm
+- Financial Services
+- Regulatory Compliance
+- Licensing
+- Trademarks
+- Intellectual Property
+- Corporate Services
+- MENA
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +58,29 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://lexyom.com
+  url: https://lexyomlaw.com
+- type: Blog
+  url: https://lexyomlaw.com/blog
+- type: News
+  url: https://lexyomlaw.com/news
+- type: About
+  url: https://lexyomlaw.com/about
+- type: Contact
+  url: https://lexyomlaw.com/contact
+- type: Support
+  url: https://lexyomlaw.com/contact
+- type: SignUp
+  url: https://lexyomlaw.com/become-a-client
+- type: Login
+  url: https://lexyomlaw.com/signin
+- type: ClientPortal
+  url: https://lexyomlaw.com/portal
+- type: DomainSecurity
+  url: security/lexyom-domain-security.yml
+- type: LLMsTxt
+  url: llms/lexyom-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
