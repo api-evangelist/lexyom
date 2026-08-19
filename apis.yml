@@ -35,7 +35,7 @@ x-note: 'Identity discrepancy recorded, not resolved: this repo was created from
   as Lexyom LLP, a law firm claiming operation since 1974. No source was available
   in this pass to confirm whether these are the same entity, a rebrand, or a domain
   reuse. Only what was directly verified on the live site is recorded below.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
