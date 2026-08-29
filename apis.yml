@@ -11,6 +11,17 @@ description: 'Lexyom (Lexyom LLP) is a law firm operating at lexyom.com, which r
   an authenticated client portal (matters, contracts, documents, invoices, trademarks).
   Lexyom publishes no public API, developer portal, API documentation, SDKs, or
   machine-readable specifications as of this enrichment pass.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
